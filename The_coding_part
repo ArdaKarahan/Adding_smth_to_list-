@@ -1,0 +1,11 @@
+#So the code is about getting an input and placing It somewhere random inside the list. It was working fine until I entered so many inputs.  
+import random
+mylist = ["bıdıbıdı", "blabla", "cicibici"]
+count = 2
+while random.random() < 0.9:
+    a = [input("please enter smth: ")]
+    count += 1 
+    x = random.randrange(0,count)
+    mylist[x:x] = a
+    
+print(mylist)
